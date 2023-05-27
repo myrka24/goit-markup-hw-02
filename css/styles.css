@@ -5,12 +5,15 @@
   --active-menu-color: #404bbf;
   --white-color: #ffffff;
   --footer-text-color: #f4f4fd;
+  --hero-background-color: #2e2f42;
+  --portfoliobtn-background-color: #f4f4fd;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
   font-style: normal;
+  background-color: #ffffff;
 }
 
 .list {
@@ -49,13 +52,14 @@ body {
 
 /*TODO ------------------ HEADER---------------- */
 
+.hero {
+  background-color: var(--hero-background-color);
+}
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand-color);
@@ -79,7 +83,6 @@ body {
 
 .header-menu-link::after {
   background: #404bbf;
-  border-radius: 2px;
 }
 
 .header-contact {
@@ -109,7 +112,6 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
-  background-color: #2e2f42;
 }
 
 .hero-btn {
@@ -117,10 +119,14 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--white-color);
+  background-color: #4d5ae5;
+  cursor: pointer;
+}
+
+.hero-btn:is(:hover, :focus) {
+  background-color: #404bbf;
 }
 
 /* ------------------ BENEFITS---------------- */
@@ -152,12 +158,14 @@ body {
 /*& ------------------ OUR TEAM---------------- */
 
 .ourteam {
+  background-color: #f4f4fd;
 }
 .ourteam-title {
 }
 .ourteam-title-list {
 }
 .ourteam-title-item {
+  background-color: #ffffff;
 }
 .ourteam-title-name {
   text-align: center;
@@ -169,7 +177,6 @@ body {
 /*& ------------------ FOOTER---------------- */
 
 .footer {
-  background: #2e2f42;
 }
 .footer-logo-link {
   font-family: "Raleway";
@@ -177,8 +184,6 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--brand-color);
@@ -202,32 +207,23 @@ body {
 }
 .portfolio-menu-item {
 }
-.portfolio-menu-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: var(--brand-color);
-}
 
 .portfolio-menu-btn {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--brand-color);
+  background-color: var(--portfoliobtn-background-color);
+  cursor: pointer;
 }
 
 .portfolio-menu-btn:is(:hover, :focus) {
   color: var(--white-color);
+  background-color: #404bbf;
 }
 
 .portfolio-img-list {
